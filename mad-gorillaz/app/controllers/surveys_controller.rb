@@ -3,6 +3,9 @@ class SurveysController < ApplicationController
   end
 
   def new
+    @survey = Survey.new
+    @question = Question.new
+    @possible_answer = PossibleAnswer.new
   end
 
   def show
