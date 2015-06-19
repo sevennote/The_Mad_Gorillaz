@@ -3,11 +3,11 @@ Rails.application.routes.draw do
   ## landing page and home page when signed in
   root 'pages#home'
 
-  ## form for new session
-  get 'sessions/login'
-
-  ## form for new user registration
-  get 'sessions/signup'
+  ## route to login session method
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create', as: 'create_session'
+  ## logout of session
+  delete '/logout' => 'sessions#destroy', as: 'logout'
 
   resources :surveys
 
