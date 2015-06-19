@@ -1,37 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'users/create'
-
-  get 'users/new'
-
-  get 'users/edit'
-
-  get 'users/show'
-
-  get 'users/destroy'
-
-  get 'users/update'
-
-  get 'sessions/login'
-
-  get 'sessions/logout'
-
-  get 'sessions/signup'
-
-  get 'surveys/create'
-
-  get 'surveys/new'
-
-  get 'surveys/show'
-
-  get 'surveys/owner_display'
-
-  get 'surveys/destroy'
-
-  get 'surveys/edit'
-
-  get 'surveys/update'
-
   ## landing page and home page when signed in
   root 'pages#home'
 
