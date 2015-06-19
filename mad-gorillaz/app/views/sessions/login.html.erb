@@ -1,2 +1,16 @@
+<h1> Fill this form to login.</h1>
+<%= form_for @user url: sessions_login do |f| %>
+	<%= f.text_field :username %>
+	<%= f.text_field :password %>
+	<%= f.submit "Login" %>
+<% end %>
+
+
+
+
+
+
 <h1>Sessions#login</h1>
 <p>Find me in app/views/sessions/login.html.erb</p>
+
+
