@@ -4,7 +4,7 @@
     <h1> Please Log-In:</h1>
       <%= form_for @user, url: create_session_path do |f| %>
       <%= f.text_field :username %><br><br>
-      <%= f.text_field :password %><br><br>
+      <%= f.password_field :password %><br><br>
       <%= f.submit "Login", class: "btn btn-primary"%>
     <% end %>
   </div>

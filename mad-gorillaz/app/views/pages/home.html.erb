@@ -1,9 +1,6 @@
 <!-- if -->
-<% if session[:user_id] %>
+<% if session[:user_id] != nil %>
 <!-- this will be a partial for landing page -->
-<%= render 'landingpage'%>
-
-<% else %>
 <div class="container well" style="text-align: center;">
   <h1>Hello, username</h1>
   <h4>Happy to have you here</h4>
@@ -39,5 +36,8 @@
 <div class="navbar-fixed-bottom" style="text-align: center;">
   <p>copyright 2015 | Survey Gorilla</p>
 </div>
+<% else %>
+
+<%= render 'landingpage'%>
 
 <%end%>

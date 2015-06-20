@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   ## logout of session
   delete '/logout' => 'sessions#destroy', as: 'logout'
 
+  get '/signup' => 'users#new'
+  post '/signup' => 'users#create'
+
   resources :surveys
-  resources :users, only: [:create, :new]
+  resources :users
 
   ## show survey data to owner - must authenticate owner identity
   get 'surveys/:id/owner_display' => 'surveys#owner_display'

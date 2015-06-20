@@ -2,9 +2,9 @@
   <div class="col-md-4"></div>
   <div class="col-md-4">
     <h1> Please Sign-Up:</h1>
-      <%= form_for @user, url: new_user_path do |f| %>
+      <%= form_for @user do |f| %>
       <%= f.text_field :username %><br><br>
-      <%= f.text_field :password %><br><br>
+      <%= f.password_field :password %><br><br>
       <%= f.submit "Sign-Up", class: "btn btn-primary"%>
     <% end %>
   </div>
