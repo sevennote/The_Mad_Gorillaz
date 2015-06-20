@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
 <body>
-<% if session[:user_id] != nil%>
+<% if session[:user_id] %>
 <div class="navbar navbar nav">
   <%= link_to 'Logout', logout_path, method: 'delete', class: "navbar-brand"%>
   <%= link_to 'Create', new_survey_path, class: "navbar-brand"%>
-  <a class="navbar-brand pull-right" href="#">Dummy</a>
+  <%= link_to @user.username, new_survey_path, class: "navbar-brand pull-right"%>
   <p class="glyphicon glyphicon-user pull-right avatar"></p>
 </div>
 <%end%>
