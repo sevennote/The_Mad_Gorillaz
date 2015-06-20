@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
 <body>
+<% if session[:user_id] == nil%>
+<div class="navbar navbar nav">
+  <a class="navbar-brand" href="#">Logout</a>
+  <a class="navbar-brand" href="#">Create</a>
+  <a class="navbar-brand pull-right" href="#">Dummy</a>
+  <p class="glyphicon glyphicon-user pull-right avatar"></p>
+</div>
+<%end%>
 
 <%= yield %>
 
