@@ -30,6 +30,7 @@ class SurveysController < ApplicationController
 
   def show
     @survey = Survey.find(params[:id])
+    @letters = ["A","B","C"]
     @questions = @survey.questions.all
   end
 
