@@ -1,26 +1,45 @@
 <!-- if -->
-
+<% if session[:user_id] == nil%>
 <!-- this will be a partial for landing page -->
+<%= render 'landingpage'%>
 
+<% else %>
 <!-- else -->
 <!-- this is our home -->
 <div class="navbar navbar nav">
-  <a class="navbar-brand" href="/">Logout</a>
-  <a class="navbar-brand" href="/">Create</a>
-  <a class="navbar-brand pull-right" href="/">Dummy</a>
-  <p class="glyphicon glyphicon-user pull-right"></p>
+  <a class="navbar-brand" href="#">Logout</a>
+  <a class="navbar-brand" href="#">Create</a>
+  <a class="navbar-brand pull-right" href="#">Dummy</a>
+  <p class="glyphicon glyphicon-user pull-right avatar"></p>
 </div>
 <div class="container well">
   <h1>Hello, Dummy</h1>
 
   <h4>Happy to have you here</h4>
-  <a href="/surveys/new" class="btn btn-primary">Create a survey</a>
 </div>
 
 <div class="container">
   <div class="col-md-8">
+    <h2>This Mini Title:</h2>
+    <p>Gastropub Williamsburg synth fixie, photo booth tousled pour-over chillwave Brooklyn beard whatever flannel yr pork belly. Church-key hoodie Brooklyn yr, bespoke 8-bit fanny pack sustainable freegan YOLO artisan gentrify banjo keytar. Paleo shabby chic kitsch Bushwick craft beer. Meditation lo-fi meggings hoodie, pug keffiyeh Bushwick church-key fanny pack messenger bag cornhole XOXO. Marfa selfies four dollar toast disrupt. Organic Shoreditch flannel, kitsch single-origin coffee freegan whatever food truck drinking vinegar cronut. Cred Marfa farm-to-table YOLO cray.</p>
+
+    <p>Dreamcatcher salvia fingerstache aesthetic. Sartorial taxidermy stumptown viral. High Life gastropub kogi aesthetic meggings. Austin shabby chic health goth hashtag Bushwick, authentic cred fashion axe before they sold out lo-fi Pinterest mumblecore craft beer Shoreditch chambray. Plaid 90's Schlitz Pinterest. Biodiesel before they sold out letterpress beard. Typewriter tofu salvia disrupt, roof party viral pork belly art party forage bicycle rights.</p>
+    <br>
+    <a href="/surveys/new" class="btn btn-primary">Create a survey</a>
   </div>
 
-  <div >
+  <div class="col-md-4">
+    <h2>This Mini Title:</h2>
+    <p>This is a mini-sub title for a fake button. Go ahead and click it... you won't.</p>
+    <button class="btn btn-success">Click me</button>
+        <h2>This Mini Title:</h2>
+    <p>This is a mini-sub title for a fake button. Go ahead and click it... you won't.</p>
+    <button class="btn btn-warning">Click me</button>
+    <h2>This Mini Title:</h2>
+    <p>This is a mini-sub title for a fake button. Go ahead and click it... you won't.</p>
+    <button class="btn btn-primary">Click me</button>
+
   </div>
+
 </div>
+<%end%>

@@ -1,3 +1,36 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.avatar {
+  margin-top: 16px;
+  color: #EA6D64;
+  font-size: 1.3em;
+}
+
+body.landing{
+  background: url(landingimg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-div {
+  margin-top: 5%;
+}
+
+.login-div > h1 {
+  font-size: 8em;
+  color: white;
+  text-align: center;
+}
+
+.login-div > h3 {
+  text-align: center;
+}
+
+.login-div > .login {
+  margin-left: 35%;
+}
+
+/*font-family: 'Dosis', sans-serif;*/
