@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
 <body>
-<% if session[:user_id] == nil%>
+<% if session[:user_id] != nil%>
 <div class="navbar navbar nav">
-  <a class="navbar-brand" href="#">Logout</a>
+  <%= link_to 'Logout', logout_path, method: 'delete', class: "navbar-brand"%>
   <a class="navbar-brand" href="#">Create</a>
   <a class="navbar-brand pull-right" href="#">Dummy</a>
   <p class="glyphicon glyphicon-user pull-right avatar"></p>
