@@ -4,8 +4,9 @@
   <div class="col-md-4 login-div">
     <h1>Survey Gorilla</h1>
     <h3>Your information, delivered.</h3>
-    <a class="login"href="/login"><button class="btn btn-success">Login</button></a>
-    <a href="/signup"><button class="btn btn-success" >Sign Up</button></a>
+    <%= link_to 'Login', login_path, class: "btn btn-success login"%>
+
+    <%= link_to 'Sign Up', signup_path, class: "btn btn-success"%>
   </div>
   <div class="navbar-fixed-bottom" style="text-align: center;">
     <p>copyright 2015 | Survey Gorilla </p>

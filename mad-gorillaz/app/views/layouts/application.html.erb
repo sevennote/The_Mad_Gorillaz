@@ -11,7 +11,7 @@
 <% if session[:user_id] != nil%>
 <div class="navbar navbar nav">
   <%= link_to 'Logout', logout_path, method: 'delete', class: "navbar-brand"%>
-  <a class="navbar-brand" href="#">Create</a>
+  <%= link_to 'Create', new_survey_path, class: "navbar-brand"%>
   <a class="navbar-brand pull-right" href="#">Dummy</a>
   <p class="glyphicon glyphicon-user pull-right avatar"></p>
 </div>
