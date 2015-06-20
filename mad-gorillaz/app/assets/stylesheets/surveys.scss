@@ -22,6 +22,9 @@ $action-color: #477DCA;
   background: $action-color;
   color: white;
   padding: 2px;
+  padding-right: 0px;
+  padding-left: 5px;
+  line-height: .9;
   border-radius: 3px;
   box-shadow: 2px 2px 2px #333;
 }
