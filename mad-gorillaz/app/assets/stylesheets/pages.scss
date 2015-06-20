@@ -1,6 +1,8 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*{font-family: 'Varela Round', sans-serif;}
+
 .avatar {
   margin-top: 16px;
   color: #EA6D64;
@@ -20,8 +22,8 @@ body.landing{
 }
 
 .login-div > h1 {
+  font-family: 'Satisfy', cursive;
   font-size: 8em;
-  color: white;
   text-align: center;
 }
 
