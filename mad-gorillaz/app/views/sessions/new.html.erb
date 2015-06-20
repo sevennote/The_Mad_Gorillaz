@@ -1,16 +1,12 @@
-<h1> Fill this form to login.</h1>
-<%= form_for @user, url: create_session_path do |f| %>
-	<%= f.text_field :username %>
-	<%= f.text_field :password %>
-	<%= f.submit "Login" %>
-<% end %>
-
-
-
-
-
-
-<h1>Sessions#login</h1>
-<p>Find me in app/views/sessions/login.html.erb</p>
-
-
+<div class="container" style="text-align: center;">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <h1> Please Log-In:</h1>
+      <%= form_for @user, url: create_session_path do |f| %>
+      <%= f.text_field :username %><br><br>
+      <%= f.text_field :password %><br><br>
+      <%= f.submit "Login", class: "btn btn-primary"%>
+    <% end %>
+  </div>
+  <div class="col-md-4"></div>
+</div>
