@@ -1,9 +1,11 @@
 <div class="container" style="text-align: center;">
   <div class="col-md-4"></div>
-  <div class="col-md-4">
+  <div id="login" class="col-md-4">
     <h1> Please Log-In:</h1>
       <%= form_for @user, url: create_session_path do |f| %>
+      <%= f.label :username %><br>
       <%= f.text_field :username %><br><br>
+      <%= f.label :password %><br>
       <%= f.password_field :password %><br><br>
       <%= f.submit "Login", class: "btn btn-primary"%>
     <% end %>

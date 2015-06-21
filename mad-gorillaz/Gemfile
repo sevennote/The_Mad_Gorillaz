@@ -19,4 +19,5 @@ group :development, :test do
   gem 'capybara'
   gem 'spring'
   gem 'better_errors'
+  gem 'shoulda-matchers'
 end
