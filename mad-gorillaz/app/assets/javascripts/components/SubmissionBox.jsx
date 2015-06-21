@@ -1,6 +1,6 @@
 var SubmissionBox = React.createClass({
   getInitialState: function() {
-    return {data: this.props};
+    return {data: this.props, answers: []};
   },
   render: function() {
     console.log(this.state);
@@ -18,6 +18,7 @@ var SubmissionBox = React.createClass({
         <form action="/submissions" method="post">
           {renderQuestions }
         </form>
+        <button className="btn btn-lg btn-success">Submit survey</button>
       </div>
     );
   }

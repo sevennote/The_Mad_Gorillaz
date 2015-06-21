@@ -1,11 +1,18 @@
 var Question = React.createClass({
+  changeAnswer: function(answerID, letter, name) {
+    this.setState({answer: name, answerID: answerID, letter: letter+". "})
+  },
+  getInitialState: function() {
+    return {answer: "", answerID: "", letter: ""}
+  },
   render: function() {
     var answers = this.props.answers;
+    var func = this.changeAnswer;
     var questionId = this.props.question.question.id;
     var prompt = this.props.question.question.prompt;
     var answers = this.props.question.answers;
     var renderedAnswers = answers.map(function(answer, idx) {
-      return <PossibleAnswer answer={answer} id={idx} />
+      return <PossibleAnswer answer={answer} id={idx} handleAnswer={func} />
     });
 
     return (
@@ -20,6 +27,7 @@ var Question = React.createClass({
           <table className="table table-striped table-bordered">
             {renderedAnswers}
           </table>
+          <p className="user-answer">Your answer: {this.state.letter} { this.state.answer }</p>
         </div>
       </div>
     );
