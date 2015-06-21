@@ -6,11 +6,11 @@ describe "the log in process", :type => :feature do
   it "signs me up" do
     visit signup_path
     within "#signup" do
-      fill_in 'user_username', :with => 'mrpants'
-      fill_in 'user_password', :with => 'pants'
+      fill_in 'user_username', :with => 'ringo'
+      fill_in 'user_password', :with => 'drums'
       click_button 'Sign-Up'
     end
     visit root_path
-    expect(page).to have_content('Hello, mrpants')
+    expect(page).to have_content('Hello, ringo')
   end
 end
