@@ -33,7 +33,7 @@ class SurveysController < ApplicationController
     @letters = ["A","B","C"]
     @questions = @survey.questions.all
     @questions.to_a.map! {|question| {question: question, answers: question.possible_answers }}
-    @data = {title: @survey.title, questions: @questions, letters: @letters}
+    @data = {title: @survey.title, questions: @questions, letters: @letters, survey_id: @survey.id, username: @survey.user.username }
   end
 
   def owner_display

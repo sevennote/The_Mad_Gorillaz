@@ -1,7 +1,6 @@
 var PossibleAnswer = React.createClass({
   handleClick: function(event) {
     event.preventDefault();
-    console.log(this.props);
     answerID = this.props.answer.id;
     letter = $(event.target).parent().children().first().html();
     name = $(event.target).parent().parent().next().html();

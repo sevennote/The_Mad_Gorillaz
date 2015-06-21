@@ -1,6 +1,7 @@
 var Question = React.createClass({
   changeAnswer: function(answerID, letter, name) {
     this.setState({answer: name, answerID: answerID, letter: letter+". "})
+    console.log(answerID);
   },
   getInitialState: function() {
     return {answer: "", answerID: "", letter: ""}
@@ -28,6 +29,7 @@ var Question = React.createClass({
             {renderedAnswers}
           </table>
           <p className="user-answer">Your answer: {this.state.letter} { this.state.answer }</p>
+          <p className="hidden answers">{ this.state.answerID }</p>
         </div>
       </div>
     );
