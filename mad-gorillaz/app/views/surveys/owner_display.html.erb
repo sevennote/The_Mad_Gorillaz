@@ -4,12 +4,13 @@
     <h1><%= @survey.title %></h1>
   </div>
 
-  <p> <a href="/surveys<%= @survey.id %>">Survey url: </a> "http://localhost:3000/surveys/ <%= @survey.id %>"</p>
+  <p> <a href="/surveys/<%= @survey.id %>">Survey url: </a> "http://localhost:3000/surveys/ <%= @survey.id %>"</p>
   <h1>Results: </h1>
-  <% @questions.each do |question| %>
+  <% @questions.each_with_index do |question, idx| %>
+    <p>Question <%= idx + 1 %>: </p>
     <table class="table table-striped table-bordered">
       <thead>
-        <tr>
+        <tr class="action">
           <td> <%= question.prompt %></td>
           <td> Number of votes:</td>
         </tr>
@@ -17,8 +18,8 @@
       <tbody>
         <% question.possible_answers.each do |poss_answer| %>
           <tr>
-            <th> <%= poss_answer.content %></th>
-            <th> <%= poss_answer.count  %></th>
+            <th class="answer-content"> <%= poss_answer.content %></th>
+            <th class="count"> <%= poss_answer.count  %></th>
           </tr>
         <% end %>
       </tbody>
