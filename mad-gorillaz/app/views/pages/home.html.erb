@@ -25,7 +25,7 @@
       <tbody>
         <% current_user.surveys.each do |survey| %>
           <tr>
-            <th> <%= link_to survey.title, survey %> </th>
+            <th> <%= link_to survey.title, survey_display_path(survey) %> </th>
           </tr>
         <% end %>
       </tbody>

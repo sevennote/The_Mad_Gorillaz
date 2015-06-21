@@ -1,5 +1,6 @@
 class SurveysController < ApplicationController
   respond_to :html, :js, :json
+
   def create
     user_id = session[:user_id]
     title = params[:title]
@@ -37,6 +38,8 @@ class SurveysController < ApplicationController
   end
 
   def owner_display
+    @survey = Survey.find(params[:id])
+    @questions = @survey.questions.all
   end
 
   def destroy
