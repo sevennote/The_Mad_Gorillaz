@@ -11,9 +11,19 @@
 </div>
 
 <div class="container">
-  <div class="col-md-8">
-  </div>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr class="action">
+        <td>My surveys</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% current_user.surveys.each do |survey| %>
+        <tr>
+          <th> <%= survey.title %></th>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-  <div >
-  </div>
 </div>

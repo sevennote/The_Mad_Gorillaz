@@ -29,8 +29,11 @@ class SurveysController < ApplicationController
 
   def show
     @survey = Survey.find(params[:id])
+    @submission = @survey.submissions.build
     @letters = ["A","B","C"]
     @questions = @survey.questions.all
+    @questions.to_a.map! {|question| {question: question, answers: question.possible_answers }}
+    @data = {title: @survey.title, questions: @questions, letters: @letters}
   end
 
   def owner_display
