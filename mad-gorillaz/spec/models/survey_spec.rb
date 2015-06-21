@@ -4,7 +4,9 @@ RSpec.describe Survey, type: :model do
 
 let(:dummy) { User.create!(username: 'dummy', password: 'pass', id: 1) }
 
-  # it { should validates_presence_of :title }
+  it { should validate_presence_of :title }
+  it { should belong_to :user }
+  it { should have_many :questions }
 
   it "belongs has a title" do
     dummy.surveys.create(title: "Who likes me?")

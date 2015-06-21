@@ -4,6 +4,10 @@ RSpec.describe User, type: :model do
 
   let(:dummy) { User.create!(username: 'dummy', password: 'pass') }
 
+  it { should validate_presence_of(:username) }
+  it { should validate_presence_of(:password) }
+  it { should have_many(:surveys) }
+
   it "creates a user with a user name" do
     expect(dummy.username).to eq('dummy')
     expect(dummy.password.class).to eq(String)
