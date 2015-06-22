@@ -1,4 +1,4 @@
-# survey-monkey-with-React
+# Survey Gorilla
 Survey Monkey clone with ReactJS for dynamic form building
 
 ## This was a project to create a SurveyMonkey clone with the following objectives: 
