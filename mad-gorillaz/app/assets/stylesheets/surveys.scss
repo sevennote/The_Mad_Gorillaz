@@ -1,5 +1,4 @@
 
-$action-color: #477DCA;
 .form-control.input-field {
   width: 70%;
   margin-right: 5em;
@@ -17,7 +16,7 @@ $action-color: #477DCA;
   font-size: 3em;
   margin: 0;
   margin-top: -.2em;
-  background: $action-color;
+  background: #477DCA;
   color: white;
   padding: 2px;
   padding-right: 0px;
@@ -27,7 +26,7 @@ $action-color: #477DCA;
   box-shadow: 2px 2px 2px #333;
 }
 .form-letter {
-  background: $action-color;
+  background: #477DCA;
   color: white;
   font-size: 1.2em;
   width: 3em;
