@@ -19,7 +19,7 @@ Survey Monkey clone with ReactJS for dynamic form building
 `surveys#new`
 ![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final1.png)
 ****
-`surveys#show`
+`pages#home`
 ![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final2.png)
 ****
 `pages#home`
