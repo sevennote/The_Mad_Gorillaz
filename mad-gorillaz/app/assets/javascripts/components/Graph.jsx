@@ -9,7 +9,7 @@ var Graph = React.createClass({
     }];
 
     return (
-      <BarChart data={data} width={400} height={300} margin={{top: 10, bottom: 50, left: 50, right: 10}}/>
+      <BarChart data={data} width={600} height={300} margin={{top: 10, bottom: 50, left: 50, right: 10}}/>
     );
   }
 });

@@ -1,10 +1,10 @@
 <div class="container">
   <div class="well">
-    <p>Survey by: <%= @survey.user.username %></p>
+    <p><b>Survey by:</b> <%= @survey.user.username %></p>
     <h1><%= @survey.title %></h1>
   </div>
 
-  <p> <a href="/surveys/<%= @survey.id %>">Survey url: </a> "http://localhost:3000/surveys/ <%= @survey.id %>"</p>
+  <p> <a href="/surveys/<%= @survey.id %>">Survey url: </a><b> "http://localhost:3000/surveys/ <%= @survey.id %>"</b></p>
   <h1>Results: </h1>
   <% @questions.each_with_index do |question, idx| %>
     <p>Question <%= idx + 1 %>: </p>
