@@ -34,5 +34,15 @@ body.landing{
 .login-div > .login {
   margin-left: 35%;
 }
-
+.action {
+  background: $action-color;
+  color: white;
+}
+.bar {
+  fill: $action-color;
+}
+.btn.btn-lg {
+  font-size: 1.2em;
+  line-height: 1;
+}
 /*font-family: 'Dosis', sans-serif;*/
