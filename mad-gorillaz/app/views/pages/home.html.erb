@@ -17,7 +17,7 @@
       </div>
       <% @user.surveys.each do |s|%>
         <ul class="list-group">
-          <%= link_to s.title, survey_path(s), class: "list-group-item glyphicon glyphicon-paste" %>
+          <%= link_to s.title, survey_display_path(s), class: "list-group-item glyphicon glyphicon-paste" %>
         </ul>
       <%end%>
     </div>
