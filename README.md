@@ -14,15 +14,18 @@ Survey Monkey clone with ReactJS for dynamic form building
 ****
 ## Screenshots
 `surveys#owner_display` 
-![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final1.png)
+![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final4.png)
 ****
 `surveys#new`
-![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final2.png)
+![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final1.png)
 ****
 `surveys#show`
+![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final2.png)
+****
+`pages#home`
 ![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final3.png)
 ****
-![screenshot](https://raw.githubusercontent.com/sevennote/The_Mad_Gorillaz/master/gorilla-final4.png)
+
 # Getting started 
 #### To use the project, just do the following: 
   - clone the repository
