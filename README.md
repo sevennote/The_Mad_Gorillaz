@@ -1,5 +1,5 @@
 # Survey Gorilla
-Survey Monkey clone with ReactJS for dynamic form building
+Survey Monkey clone with dynamic form building
 
 ## This was a project to create a SurveyMonkey clone with the following objectives: 
   - Be able to create a survey with dynamic input fields
