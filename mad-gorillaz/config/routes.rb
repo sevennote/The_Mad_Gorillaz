@@ -14,11 +14,9 @@ Rails.application.routes.draw do
 
   resources :surveys
   resources :users
+  resources :submissions, only: [:create, :show]
 
   ## show survey data to owner - must authenticate owner identity
-  get 'surveys/:id/owner_display' => 'surveys#owner_display'
-
-  ## customer to submit the form on the surveys/:id page
-  post 'submissions/create' => "submissions#create"
+  get 'surveys/:id/owner_display' => 'surveys#owner_display', as: 'survey_display'
 
 end
